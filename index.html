@@ -51,6 +51,13 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue2);outline-offs
 .links a:hover{color:var(--blue2)}
 .menu{display:none;border:0;background:none;font-size:28px;cursor:pointer;color:var(--ink);padding:4px 8px}
 
+/* Rescue helpline button, pinned in the sticky header */
+.nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.call{display:inline-flex;align-items:center;gap:7px;background:var(--blue2);color:#fff;
+      border-radius:999px;padding:10px 17px;font-weight:800;font-size:14px;white-space:nowrap}
+.call:hover{background:#096b97}
+@media(max-width:1000px){.call-num{display:none}}
+
 /* ---------- Hero ---------- */
 .hero{padding:76px 0 55px;background:radial-gradient(circle at 85% 15%,#c8f1ff 0,#c8f1ff 12%,transparent 32%),linear-gradient(135deg,#fffaf3 0%,#eefaff 100%)}
 .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center}
@@ -161,7 +168,12 @@ footer{background:#10222c;color:#dce8ed;padding:35px 0}
   .gallery img,.gallery img:first-child,.gallery img:nth-child(4){height:330px}
   .nav-inner{height:68px}
   .links{top:68px}
-  .brand span{font-size:13px}
+  /* Tighten the header so logo + helpline + menu all fit on a narrow phone */
+  .brand{gap:9px}
+  .brand img{width:44px;height:44px}
+  .brand span{font-size:12px;max-width:118px}
+  .call{padding:9px 13px;font-size:13px;gap:5px}
+  .menu{font-size:25px;padding:2px 4px}
   .hero h1{font-size:43px}
   .section-head h2,.story h2{font-size:35px}
   .donate h2{font-size:40px}
@@ -189,7 +201,12 @@ footer{background:#10222c;color:#dce8ed;padding:35px 0}
       <a href="#donate">Donate</a>
       <a href="#contact">Contact</a>
     </div>
-    <button class="menu" id="menubtn" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <div class="nav-actions">
+      <a class="call" href="tel:+919620008799" aria-label="Call the rescue helpline on +91 96200 08799">
+        <span aria-hidden="true">📞</span>Rescue<span class="call-num">: 96200 08799</span>
+      </a>
+      <button class="menu" id="menubtn" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    </div>
   </div>
 </nav>
 

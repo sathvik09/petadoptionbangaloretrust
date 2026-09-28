@@ -75,6 +75,22 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue2);outline-offs
 .badge{position:absolute;bottom:22px;left:-20px;background:#fff;border-radius:18px;padding:16px 18px;box-shadow:var(--shadow);font-weight:800}
 .badge small{display:block;color:var(--muted);font-weight:500}
 
+/* ---------- Impact stats ---------- */
+/* auto-fit: adding another .stat block re-flows the row automatically */
+.stats{padding:14px 0 0}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 24px;box-shadow:0 8px 28px rgba(18,54,70,.05)}
+.stat{text-align:center;padding:4px 16px}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat strong{display:block;font-family:'Playfair Display',serif;font-size:clamp(42px,6vw,58px);
+  line-height:1;color:var(--blue2)}
+.stat span{display:block;margin-top:9px;color:var(--muted);font-weight:600;font-size:15px}
+@media(max-width:620px){
+  .stats-grid{grid-template-columns:1fr;padding:26px 20px}
+  .stat+.stat{border-left:0;border-top:1px solid var(--line);margin-top:22px;padding-top:26px}
+}
+
 /* ---------- Sections ---------- */
 section{padding:86px 0}
 .section-head{max-width:720px;margin-bottom:36px}
@@ -228,6 +244,14 @@ footer{background:#10222c;color:#dce8ed;padding:35px 0}
       <img class="hero-photo" src="assets/rescue-1.svg" alt="Rescued dog receiving care">
       <div class="badge">They cannot ask for help.<small>We can choose to be there.</small></div>
     </div>
+  </div>
+</section>
+
+<!-- Impact stats. To add another, copy one .stat block; the row re-flows on its own. -->
+<section class="stats" aria-label="Our impact so far">
+  <div class="container stats-grid">
+    <div class="stat"><strong>8+</strong><span>Years of rescue work</span></div>
+    <div class="stat"><strong>1,000+</strong><span>Animals saved</span></div>
   </div>
 </section>
 

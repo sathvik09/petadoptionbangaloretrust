@@ -48,19 +48,45 @@ single biggest trust signal a small charity's site can carry.
 
 ---
 
-## 4. Add real impact numbers
+## 4. Show what a donation buys
 
-"We help animals" persuades far less than "over 200 rescues since 2021." Even
-rough but honest figures anchor the page and give donors a sense of scale.
+The highest-converting thing a small trust can add, and almost none do it. It
+turns a vague "please donate" into buying a specific, visible thing:
 
-Good candidates: animals rescued, animals treated, animals rehomed, year founded.
+> **₹500** feeds a recovering dog for a week
+> **₹2,000** covers vaccinations and deworming
+> **₹8,000** funds an emergency surgery
 
-**Needed:** real figures. These must not be invented — fabricated statistics on a
-charity's donation page would be seriously damaging if ever questioned.
+Donors give more, and more often, when they can see what their amount purchases.
+This sits naturally beside the existing bank details.
+
+**Needed:** three or four real cost figures from actual vet bills.
 
 ---
 
-## 5. Replace the placeholder photos
+## 5. Strengthen the impact stats
+
+Two confirmed figures are now live under the hero: **8+ years** and
+**1,000+ animals saved**. The row is built to re-flow, so adding a third or
+fourth is a copy-paste of one `.stat` block in `index.html`.
+
+Worth adding if the numbers are known:
+
+- **Animals rehomed** — shows outcomes, not just intake. A rescue that takes in
+  animals without rehoming them raises a hoarding concern, and experienced donors
+  look for this figure specifically.
+- **Animals currently in care** — makes the work feel live and ongoing rather
+  than historical.
+- **Sterilisations or vaccinations done** — if the trust runs an ABC programme.
+
+Use a number only if it is real and defensible. A donor who later discovers a
+figure was invented has a legitimate grievance, and for a registered trust
+soliciting public funds that is a far worse problem than a plain-looking page.
+Understating a real number is always safer than overstating one.
+
+---
+
+## 6. Replace the placeholder photos
 
 Six placeholder images currently sit at `assets/rescue-1.svg` … `rescue-6.svg`.
 
@@ -81,7 +107,7 @@ page or further down.
 
 ---
 
-## 6. Get a custom domain
+## 7. Get a custom domain
 
 `sathvik09.github.io/petadoptionbangaloretrust` works, but a real domain such as
 `petadoptionbangalore.org` looks materially more legitimate next to a request for
@@ -89,7 +115,7 @@ money, and costs roughly ₹900–1,500/year. HTTPS remains free and automatic.
 
 ---
 
-## 7. Be aware the contact details will be scraped
+## 8. Be aware the contact details will be scraped
 
 The phone number, Gmail address and bank details are on a public, indexed page.
 Expect spam calls and email. This is the normal trade-off for a public donation

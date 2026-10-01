@@ -86,16 +86,11 @@ Understating a real number is always safer than overstating one.
 
 ---
 
-## 6. Replace the placeholder photos
+## 6. Replace the placeholder photos — done
 
-Six placeholder images currently sit at `assets/rescue-1.svg` … `rescue-6.svg`.
-
-To swap in real photos:
-
-1. Add the photos to `assets/` (e.g. `rescue-1.jpg`)
-2. In `index.html`, change the seven `src="assets/rescue-N.svg"` references to the
-   new filenames — they are all marked with `<!-- PLACEHOLDER -->` comments
-3. Delete the unused `.svg` files
+The placeholders have been replaced with real rescue photos in `assets/`
+(`hero-*.jpg`, `story-*.jpg`, `gallery-*.jpg`). To swap one, drop the new file in
+`assets/`, update its `src` in `index.html`, and delete the old file.
 
 Keep photos under ~400 KB each and roughly 1200×900 or larger. Filenames are
 case-sensitive on GitHub's servers even though they are not on macOS.
